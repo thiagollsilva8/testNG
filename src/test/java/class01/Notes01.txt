@@ -1,0 +1,4 @@
+TestNG (Test Next Generation) is a testing framework designed to enhance the capabilities of the
+java programming language for software testing purposes. It is inspired by jUnit and NUnit,
+but with additional features and flexibility.
+
