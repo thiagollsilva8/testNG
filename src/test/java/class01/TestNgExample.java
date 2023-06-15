@@ -24,7 +24,7 @@ public class TestNgExample {
 
     public static WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void OpenAndLaunchBrowser() {
 
         // Webdriver
@@ -34,7 +34,7 @@ public class TestNgExample {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void closeBrowser() {
         driver.close();
     }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/thiag/IdeaProjects/testNgBasicBatch16/target">
+        <classes>
+            <class name = "class01.Priority">
+                <methods>
+                    <include name="Atest"/>
+                    <include name="Btest"/>
+                    <exclude name="Ctest"/>
+                    <include name="Dtest"/>
+                    <include name="Abtest"/>
+                </methods>
+            </class>
+            <class name="class02.HardAssertions">
+                <methods>
+                    <include name="verifyTheErrorMessage"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
