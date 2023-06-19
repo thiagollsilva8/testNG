@@ -1,4 +1,4 @@
-package class02;
+package class04;
 
 import Utils.CommonMethods;
 import org.openqa.selenium.By;
@@ -9,11 +9,6 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class SoftAssertions extends CommonMethods {
-
-    // precondition
-    // login into the syntax HRMS APP
-    // verify that the Welcome message is displayed
-    // verify that the message is  "Welcome Admin"
 
     @BeforeMethod(alwaysRun = true)
     public void OpenBrowserAndNavigate() {
@@ -28,9 +23,11 @@ public class SoftAssertions extends CommonMethods {
 
     @Test(groups = "regression")
     public void verifyTheWelcomeMessage() {
+
         // send username
         WebElement userName = driver.findElement(By.xpath("//input[@name='txtUsername']"));
         userName.sendKeys("Admin");
+
         // send password
         WebElement password = driver.findElement(By.xpath("//input[@name='txtPassword']"));
         password.sendKeys("Hum@nhrm123");

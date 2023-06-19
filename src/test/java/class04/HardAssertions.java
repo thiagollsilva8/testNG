@@ -1,4 +1,4 @@
-package class02;
+package class04;
 
 import Utils.CommonMethods;
 import org.openqa.selenium.By;
@@ -9,14 +9,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class HardAssertions extends CommonMethods {
-
-    // goto HRMS
-    // enter username
-    // enter wrong password
-    // click on login
-    // verify that the error message Invalid credentials is displayed
-    // also confirm that the error message is Displayed
-    // I will put in pre-conditions for my test case in the Before Method
 
     @BeforeMethod(alwaysRun = true)
     public void OpenBrowserAndNavigate() {
